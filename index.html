@@ -12,19 +12,24 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Valter Moura | Psicólogo Clínico em Brasília | Bene Esse">
 <meta name="twitter:description" content="Psicólogo clínico com abordagem fenomenológico-existencial. Um espaço de escuta, acolhimento e cuidado.">
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0b5_2ekNdkALSLckdx1cu9U3yiNCkUFkWy6b8VloSzG9cMN2RKGrd8u-pHudgKXhMfbU658WZTOUZkGOn6kcvSaKua4N6IypUxfjhupwi-su1gt1zV6ZtNjLnG_3EpszEXXRS_LlYRCyUw0nG3dNRVvKrtnDt2FCMbngUul_LoiOAoPjw17Y0fT1eWVEyMidD581272GnkAz3ZH4miBT4kN7vwbYc_gArDxBP11p5nLAPTwNkS34JBwWPo40C4bcJGvv5ivNKWPi_7ctDpduE96UJjovz7uBEAnjzhw86rEwKCjunizKRogiowx961vd0zHifmfzTEojeP893_kU0g" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jb250cmlidXRpb24udXNlcmNvbnRlbnQuZ29vZ2xlLmNvbS9kb3dubG9hZD9jPUNneGlZWEprWDNOMGIzSmhaMlVTVEJJSmRHVnRjRjlrWVhSaEdqOEtNR0ZsTkRkaE16azFPVFptWmpSa1pHTXdNREEyTlRNek1XTXpZamMwWkRRek1EUmlPRFV4TkRNMk1USmpaVGt3WXhJTEVnY1Fncy1kM2FzZEdBRSZmaWxlbmFtZT12YWx0ZXItbW91cmEtYmVuZS1lc3NlLmh0bWwmb3BpPTEwMzEzNTA1MA"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Valter Moura","jobTitle":"Psicólogo Clínico","description":"Psicólogo clínico com abordagem fenomenológico-existencial","telephone":"+5561982525488","address":{"@type":"PostalAddress","addressLocality":"Brasília","addressRegion":"DF","addressCountry":"BR"},"sameAs":["https://instagram.com/mouravaltim"],"brand":{"@type":"Brand","name":"Bene Esse"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Valter Moura","jobTitle":"Psicólogo Clínico","description":"Psicólogo clínico com abordagem fenomenológico-existencial","telephone":"+5561982525488","address":{"@type":"PostalAddress","addressLocality":"Brasília","addressRegion":"DF","addressCountry":"BR"},"sameAs":["https://instagram.com/mouravaltim"],"brand":{"@type":"Brand","name":"Bene Esse"}}</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <script>
-  /* Executado imediatamente para evitar flash de tema incorreto (FOUC) */
+  /* Executado imediatamente para evitar flash de tema incorreto e alinhar o botão */
   (function() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
     }
   })();
 </script>
+
 <style>
 /* ═══════════════════════════════════════
    DESIGN TOKENS — LIGHT MODE (default)
@@ -41,14 +46,12 @@
   --rose-soft:     #FAF0F5;
   --gold:          #B8943A;
 
-  /* backgrounds — Modificado para lilás suave e 100% uniforme */
   --bg-page:       #F3EDFA;
   --bg-surface:    #FFFFFF;
   --bg-subtle:     #EFE7F7;
   --bg-dark:       #140C24;
   --bg-dark-2:     #1E1035;
 
-  /* text — WCAG AA compliant */
   --tx-heading:    #120A22;
   --tx-body:       #2C1F42;
   --tx-secondary:  #533E6E;
@@ -58,39 +61,32 @@
   --tx-on-dark-2:  #C8B8E8;
   --tx-on-dark-3:  #8E7AB0;
 
-  /* borders */
   --border:        rgba(91,31,163,0.10);
   --border-dark:   rgba(196,168,232,0.15);
 
-  /* shadows */
   --sh-sm:  0 2px 16px rgba(91,31,163,0.07);
   --sh-md:  0 8px 40px rgba(91,31,163,0.11);
   --sh-lg:  0 24px 80px rgba(91,31,163,0.15);
 
-  /* header */
   --hdr-bg:        transparent;
   --hdr-scrolled:  rgba(243,237,250,0.97);
   --hdr-shadow:    0 1px 30px rgba(91,31,163,0.09);
   --hdr-nav-color: #3B2A55;
   --hdr-logo-filter: none;
 
-  /* mobile menu */
   --mm-bg: rgba(243,237,250,0.99);
   --mm-link: #120A22;
 
-  /* cards */
   --card-bg:       #FFFFFF;
   --card-border:   rgba(91,31,163,0.09);
   --card-hover-bg: #FAF6FF;
 
-  /* contact cards */
   --cc-bg:         #EFE7F7;
   --cc-hover:      #EDE4F8;
 }
 
 /* ═══════════════════════════════════════
    DARK MODE OVERRIDES (SISTEMA & MANUAL)
-   Suavizado e clareado para reduzir o contraste excessivo
 ═══════════════════════════════════════ */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
@@ -105,7 +101,6 @@
     --rose-soft:     #2E1B38;
     --gold:          #E5C06E;
 
-    /* Fundos escuros suavizados e clareados (menos pretos, mais confortáveis) */
     --bg-page:       #261D3D;
     --bg-surface:    #2E244A;
     --bg-subtle:     #392C5B;
@@ -158,7 +153,6 @@
   --rose-soft:     #2E1B38;
   --gold:          #E5C06E;
 
-  /* Fundos escuros suavizados e clareados (menos pretos, mais confortáveis) */
   --bg-page:       #261D3D;
   --bg-surface:    #2E244A;
   --bg-subtle:     #392C5B;
@@ -198,7 +192,6 @@
   --cc-hover:      #44356E;
 }
 
-/* Força modo claro caso selecionado explicitamente */
 :root[data-theme="light"] {
   --purple:        #5B1FA3;
   --purple-deep:   #3D1570;
@@ -257,7 +250,8 @@ body {
   line-height: 1.6;
 }
 
-img { max-width: 100%; display: block; }
+/* Resolução base p/ imagens não estourarem */
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 
 h1, h2, h3, h4 {
@@ -267,7 +261,7 @@ h1, h2, h3, h4 {
 }
 
 /* ═══════════════════════════════════════
-   HEADER
+   HEADER & SWITCH DESIGN
 ═══════════════════════════════════════ */
 #header {
   position: fixed;
@@ -292,12 +286,12 @@ h1, h2, h3, h4 {
 .hdr-logo img {
   height: 52px;
   width: auto;
+  max-height: 100%;
   transition: height 0.35s ease;
   filter: var(--hdr-logo-filter);
 }
 #header.scrolled .hdr-logo img { height: 40px; }
 
-/* header nav — desktop only */
 .hdr-nav {
   display: flex;
   align-items: center;
@@ -349,39 +343,75 @@ h1, h2, h3, h4 {
   box-shadow: 0 8px 28px rgba(91,31,163,0.42);
 }
 
-/* Botão de Troca de Tema — Modificado para incluir legenda e ícone de chave */
-.theme-toggle-btn {
-  background: none;
-  border: none;
-  color: var(--hdr-nav-color);
-  cursor: pointer;
-  display: inline-flex;
+/* Interruptor deslizante para o tema (Slider Switch) */
+.theme-switch-container {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
-  border-radius: 30px;
+  gap: 10px;
+  user-select: none;
+}
+.theme-switch-label {
   font-family: 'Jost', sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  transition: background 0.3s, color 0.3s, transform 0.2s;
+  color: var(--hdr-nav-color);
+  transition: color 0.3s;
 }
-.theme-toggle-btn:hover {
-  background: var(--border);
-  color: var(--purple);
+.theme-switch {
+  display: inline-block;
+  height: 22px;
+  position: relative;
+  width: 42px;
+  cursor: pointer;
 }
-.theme-toggle-btn:active {
-  transform: scale(0.96);
+.theme-switch input {
+  display: none;
 }
-.theme-toggle-btn svg {
-  transition: transform 0.3s ease;
+.slider {
+  background-color: var(--tx-muted);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px;
+  opacity: 0.5;
+  border: 1px solid transparent;
 }
-:root[data-theme="dark"] .theme-toggle-btn svg {
-  transform: rotate(180deg);
+.slider:before {
+  background-color: #fff;
+  bottom: 3px;
+  content: "";
+  height: 14px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 14px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+/* CSS ativado quando o input ou o tema do site estiver dark */
+input:checked + .slider,
+:root[data-theme="dark"] .slider {
+  background-color: var(--purple);
+  opacity: 1;
+}
+input:checked + .slider:before,
+:root[data-theme="dark"] .slider:before {
+  transform: translateX(18px);
 }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle-btn svg { transform: rotate(180deg); }
+  :root:not([data-theme="light"]) .slider {
+    background-color: var(--purple);
+    opacity: 1;
+  }
+  :root:not([data-theme="light"]) .slider:before {
+    transform: translateX(18px);
+  }
 }
 
 /* Estilos da assinatura Bunker Digital no rodapé */
@@ -399,8 +429,10 @@ h1, h2, h3, h4 {
   gap: 8px;
 }
 .bunker-logo {
-  height: 42px;
-  width: auto;
+  width: auto !important;
+  height: auto !important;
+  max-width: 140px !important;
+  max-height: 38px !important;
   mix-blend-mode: screen;
   opacity: 0.75;
   transition: opacity 0.3s, transform 0.3s;
@@ -422,7 +454,7 @@ h1, h2, h3, h4 {
 }
 
 /* ═══════════════════════════════════════
-   HAMBURGER
+   HAMBURGER & MOBILE OVERLAY MENU
 ═══════════════════════════════════════ */
 .hamburger {
   display: none;
@@ -446,9 +478,6 @@ h1, h2, h3, h4 {
 .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
 
-/* ═══════════════════════════════════════
-   MOBILE OVERLAY MENU
-═══════════════════════════════════════ */
 .mobile-overlay {
   display: none;
   position: fixed;
@@ -490,7 +519,7 @@ h1, h2, h3, h4 {
 }
 
 /* ═══════════════════════════════════════
-   SECTION UTILITIES
+   SECTION UTILITIES & SCROLL REVEAL
 ═══════════════════════════════════════ */
 .section-wrap { padding: 96px 5%; }
 .container    { max-width: 1200px; margin: 0 auto; }
@@ -515,9 +544,6 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 
-/* ═══════════════════════════════════════
-   SCROLL REVEAL
-═══════════════════════════════════════ */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -531,7 +557,7 @@ h1, h2, h3, h4 {
 .delay-5 { transition-delay: 0.50s; }
 
 /* ═══════════════════════════════════════
-   HERO — Removido o degradê para manter uniforme
+   HERO (BANNER PRINCIPAL)
 ═══════════════════════════════════════ */
 .hero {
   min-height: 100svh;
@@ -543,7 +569,6 @@ h1, h2, h3, h4 {
   background: var(--bg-page);
 }
 
-/* animated orbs */
 .orb {
   position: absolute;
   border-radius: 50%;
@@ -589,7 +614,10 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
-/* hero left */
+.hero-left {
+  position: relative;
+}
+
 .hero-chip {
   display: inline-flex;
   align-items: center;
@@ -698,7 +726,6 @@ h1, h2, h3, h4 {
   animation: fadeUp 0.7s ease 0.75s forwards;
 }
 
-/* hero right — photo */
 .hero-photo-col {
   display: flex;
   align-items: flex-end;
@@ -775,7 +802,7 @@ h1, h2, h3, h4 {
 @keyframes fadeIn  { from{opacity:0} to{opacity:1} }
 
 /* ═══════════════════════════════════════
-   APRESENTAÇÃO
+   O CONCEITO (Sobre o Nome)
 ═══════════════════════════════════════ */
 .sec-apresentacao {
   background: var(--bg-surface);
@@ -813,7 +840,7 @@ h1, h2, h3, h4 {
 .prose p:last-child { margin-bottom: 0; }
 
 /* ═══════════════════════════════════════
-   TRAJETÓRIA — Modificado para fundo uniforme
+   ABORDAGEM (Perspectiva Fenomenológica)
 ═══════════════════════════════════════ */
 .sec-trajetoria {
   background: var(--bg-subtle);
@@ -840,7 +867,7 @@ h1, h2, h3, h4 {
 .trajetoria-body .prose p { font-size: clamp(17px, 2vw, 20px); }
 
 /* ═══════════════════════════════════════
-   HISTÓRIA
+   CAMINHADA (Minha História / Família)
 ═══════════════════════════════════════ */
 .sec-historia { background: var(--bg-surface); }
 .historia-grid {
@@ -892,7 +919,7 @@ h1, h2, h3, h4 {
 }
 
 /* ═══════════════════════════════════════
-   PERSPECTIVA (dark bg section)
+   PSICOTERAPIA (Como funciona)
 ═══════════════════════════════════════ */
 .sec-perspectiva {
   background: var(--bg-dark);
@@ -946,7 +973,7 @@ h1, h2, h3, h4 {
 }
 
 /* ═══════════════════════════════════════
-   FORMAÇÃO — Modificado para fundo uniforme
+   FORMAÇÃO
 ═══════════════════════════════════════ */
 .sec-formacao {
   background: var(--bg-page);
@@ -1021,7 +1048,7 @@ h1, h2, h3, h4 {
 }
 
 /* ═══════════════════════════════════════
-   QUOTE
+   QUOTE & CONTATO
 ═══════════════════════════════════════ */
 .sec-quote {
   padding: 112px 5%;
@@ -1079,9 +1106,6 @@ h1, h2, h3, h4 {
   color: rgba(255,255,255,0.52);
 }
 
-/* ═══════════════════════════════════════
-   CONTATO
-═══════════════════════════════════════ */
 .sec-contato { background: var(--bg-surface); }
 .contato-grid {
   display: grid;
@@ -1157,7 +1181,7 @@ h1, h2, h3, h4 {
 }
 
 /* ═══════════════════════════════════════
-   FOOTER
+   FOOTER & WHATSAPP FLOATING
 ═══════════════════════════════════════ */
 footer {
   background: var(--bg-dark);
@@ -1172,11 +1196,17 @@ footer {
   gap: 24px;
   flex-wrap: wrap;
 }
+
+/* TRAVA DE SEGURANÇA PARA A LOGO DO RODAPÉ */
 .footer-logo img {
-  height: 60px; width: auto;
+  width: auto !important;
+  height: auto !important;
+  max-width: 200px !important;
+  max-height: 50px !important;
   filter: brightness(0) invert(1);
   opacity: 0.80;
 }
+
 .footer-info { text-align: right; }
 .footer-name {
   font-family: 'Playfair Display', serif;
@@ -1225,7 +1255,6 @@ footer {
 }
 .footer-links a:hover { color: var(--tx-on-dark-2); }
 
-/* Assinatura Bunker Digital adicionada */
 .footer-bunker {
   margin-top: 40px;
   padding-top: 24px;
@@ -1239,9 +1268,13 @@ footer {
   align-items: center;
   gap: 8px;
 }
+
+/* TRAVA DE SEGURANÇA PARA A LOGO DA BUNKER */
 .bunker-logo {
-  height: 42px;
-  width: auto;
+  width: auto !important;
+  height: auto !important;
+  max-width: 140px !important;
+  max-height: 38px !important;
   mix-blend-mode: screen;
   opacity: 0.75;
   transition: opacity 0.3s, transform 0.3s;
@@ -1262,9 +1295,7 @@ footer {
   color: var(--tx-on-dark-2);
 }
 
-/* ═══════════════════════════════════════
-   WHATSAPP FLOAT
-═══════════════════════════════════════ */
+/* TRAVA DE SEGURANÇA PARA O ÍCONE FLUTUANTE DO WHATSAPP */
 .wa-float {
   position: fixed;
   bottom: 28px; right: 28px;
@@ -1283,14 +1314,20 @@ footer {
   box-shadow: 0 10px 40px rgba(34,197,94,0.55);
   animation: none;
 }
-.wa-float svg { width: 30px; height: 30px; fill: #fff; }
+.wa-float svg { 
+  width: 32px !important; 
+  height: 32px !important; 
+  max-width: 32px !important; 
+  max-height: 32px !important; 
+  fill: #fff; 
+}
 @keyframes waPulse {
   0%,100% { box-shadow: 0 6px 28px rgba(34,197,94,0.40); }
   50% { box-shadow: 0 6px 44px rgba(34,197,94,0.60), 0 0 0 10px rgba(34,197,94,0.09); }
 }
 
 /* ═══════════════════════════════════════
-   RESPONSIVE — TABLET  ≤1024px
+   RESPONSIVE LAYOUTS
 ═══════════════════════════════════════ */
 @media (max-width:1024px) {
   .hdr-nav, .btn-pill-hdr { display: none; }
@@ -1311,21 +1348,13 @@ footer {
   .historia-photo { position: static; max-width: 340px; margin: 32px auto 0; }
 
   .perspectiva-grid { grid-template-columns: 1fr; }
-
   .formacao-grid { grid-template-columns: 1fr 1fr; }
-
   .contato-grid { grid-template-columns: 1fr; gap: 44px; }
-
   .footer-info { text-align: left; }
 }
 
-/* ═══════════════════════════════════════
-   RESPONSIVE — MOBILE  ≤640px
-═══════════════════════════════════════ */
 @media (max-width:640px) {
   .section-wrap { padding: 72px 5%; }
-
-  /* hero */
   .hero { padding: 96px 5% 60px; }
   .photo-frame { max-width: 270px; }
   .photo-ring-2 { display: none; }
@@ -1334,24 +1363,18 @@ footer {
   .hero-btns { flex-direction: column; }
   .hero-btns a { text-align: center; }
 
-  /* misc sections */
   .formacao-grid { grid-template-columns: 1fr; }
   .quote-text { font-size: 19px; }
 
-  /* footer */
   .footer-top { flex-direction: column; }
   .footer-info { text-align: left; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
   .footer-links { flex-wrap: wrap; }
 
-  /* float btn */
   .wa-float { bottom: 20px; right: 20px; width: 52px; height: 52px; }
-  .wa-float svg { width: 26px; height: 26px; }
+  .wa-float svg { width: 28px !important; height: 28px !important; }
 }
 
-/* ═══════════════════════════════════════
-   RESPONSIVE — XS  ≤380px
-═══════════════════════════════════════ */
 @media (max-width:380px) {
   .hero-h1 { font-size: 26px; }
   .photo-frame { max-width: 240px; }
@@ -1367,23 +1390,23 @@ footer {
   </a>
   <nav class="hdr-nav">
     <a href="#inicio">Início</a>
-    <a href="#trajetoria">Trajetória</a>
-    <a href="#historia">História</a>
-    <a href="#perspectiva">Perspectiva</a>
+    <a href="#conceito">Conceito</a>
+    <a href="#abordagem">Abordagem</a>
+    <a href="#caminhada">Caminhada</a>
+    <a href="#psicoterapia">Psicoterapia</a>
     <a href="#formacao">Formação</a>
     <a href="#contato">Contato</a>
   </nav>
   
-  <div style="display: flex; align-items: center; gap: 16px;">
-    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema" onclick="toggleTheme()">
-      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="7.5" cy="15.5" r="5.5"/>
-        <path d="m21 3-9.5 9.5"/>
-        <path d="m19 5 1.5 1.5"/>
-        <path d="m16.5 7.5 1 1"/>
-      </svg>
-      <span id="theme-text">Modo Claro</span>
-    </button>
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <div class="theme-switch-container">
+      <span class="theme-switch-label" id="theme-text">Modo Claro</span>
+      <label class="theme-switch" for="checkbox-theme">
+        <input type="checkbox" id="checkbox-theme" onchange="toggleTheme()" aria-label="Alternar tema" />
+        <div class="slider"></div>
+      </label>
+    </div>
+
     <a href="https://wa.me/5561982525488" target="_blank" rel="noopener" class="btn-pill btn-pill-hdr">Agendar Atendimento</a>
     <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleNav()">
       <span></span><span></span><span></span>
@@ -1392,17 +1415,19 @@ footer {
 </header>
 
 <div class="mobile-overlay" id="mobileNav">
-  <a href="#inicio"      onclick="closeNav()">Início</a>
+  <a href="#inicio"       onclick="closeNav()">Início</a>
   <div class="mobile-sep"></div>
-  <a href="#trajetoria"  onclick="closeNav()">Trajetória</a>
+  <a href="#conceito"     onclick="closeNav()">Conceito</a>
   <div class="mobile-sep"></div>
-  <a href="#historia"    onclick="closeNav()">História</a>
+  <a href="#abordagem"    onclick="closeNav()">Abordagem</a>
   <div class="mobile-sep"></div>
-  <a href="#perspectiva" onclick="closeNav()">Perspectiva</a>
+  <a href="#caminhada"    onclick="closeNav()">Caminhada</a>
   <div class="mobile-sep"></div>
-  <a href="#formacao"    onclick="closeNav()">Formação</a>
+  <a href="#psicoterapia" onclick="closeNav()">Psicoterapia</a>
   <div class="mobile-sep"></div>
-  <a href="#contato"     onclick="closeNav()">Contato</a>
+  <a href="#formacao"     onclick="closeNav()">Formação</a>
+  <div class="mobile-sep"></div>
+  <a href="#contato"      onclick="closeNav()">Contato</a>
   <a href="https://wa.me/5561982525488" target="_blank" rel="noopener" class="btn-pill" onclick="closeNav()">Agendar Atendimento</a>
 </div>
 
@@ -1413,12 +1438,12 @@ footer {
   <div class="hero-grid">
 
     <div class="hero-left">
-      <div class="hero-chip"><i></i> Psicólogo Clínico · Brasília</div>
+      <div class="hero-chip"><i></i> Bene Esse • Psicologia Clínica</div>
       <h1 class="hero-h1">Cada história merece <em>escuta, cuidado e caminho.</em></h1>
       <p class="hero-sub">Um espaço humano de acolhimento, reflexão e reconstrução, onde sua experiência pode ser escutada com respeito, profundidade e autenticidade.</p>
       <div class="hero-btns">
         <a href="https://wa.me/5561982525488?text=Ol%C3%A1%2C%20Valter.%20Gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener" class="btn-pill">Agendar Atendimento</a>
-        <a href="#historia" class="btn-outline">Conhecer Minha História</a>
+        <a href="#caminhada" class="btn-outline">Conhecer Nossa Caminhada</a>
       </div>
       <p class="hero-delta">CRP 01/30418</p>
     </div>
@@ -1431,7 +1456,7 @@ footer {
         <img src="valter-moura.png" alt="Valter Moura, Psicólogo Clínico" class="photo-img">
         <div class="photo-badge">
           <div class="badge-name">Bene Esse</div>
-          <div class="badge-sub">Humanizar o Ser e o Existir</div>
+          <div class="badge-sub">Presença e cuidado no seu caminho</div>
         </div>
       </div>
     </div>
@@ -1439,48 +1464,41 @@ footer {
   </div>
 </section>
 
-<section class="sec-apresentacao section-wrap">
+<section class="sec-apresentacao section-wrap" id="conceito">
   <div class="container">
     <div class="apresentacao-grid">
       <div class="reveal">
-        <div class="label-tag">Sobre</div>
-        <h2 class="apresentacao-title">Humanizar <em>o Ser e o Existir</em></h2>
+        <div class="label-tag">O Conceito</div>
+        <h2 class="apresentacao-title">O significado de <em>Bene Esse</em></h2>
         <div class="divider-line"></div>
       </div>
       <div class="prose reveal delay-2">
-        <p>A Bene Esse nasce da compreensão de que cada pessoa carrega uma história singular.</p>
-        <p>O cuidado psicológico acontece no encontro humano, na escuta sensível e no respeito à experiência vivida.</p>
+        <p>Bene Esse é uma expressão latina que significa “bem-estar”. Mais do que um estado de conforto ou a simples ausência de sofrimento, ela representa a possibilidade de habitar a própria existência de modo mais consciente e presente.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec-trajetoria section-wrap" id="trajetoria">
+<section class="sec-trajetoria section-wrap" id="abordagem">
   <div class="container">
     <div class="trajetoria-head">
       <div class="reveal">
-        <div class="label-tag">Percurso</div>
-        <h2>Trajetória</h2>
+        <div class="label-tag">Abordagem</div>
+        <h2>Perspectiva Fenomenológico-Existencial</h2>
       </div>
-      <p class="reveal delay-2">Acredito que a escuta pode abrir espaço para que a vida reencontre sentido.</p>
     </div>
     <div class="trajetoria-body prose">
-      <p class="reveal">Minha trajetória tem sido marcada pelo encontro com o humano em sua complexidade — suas dores, silêncios, rupturas, afetos e possibilidades de reconstrução.</p>
-      <p class="reveal delay-1">Ao longo dos anos, fui compreendendo que cuidar não significa oferecer respostas prontas, mas construir um espaço de presença onde a experiência humana possa ser acolhida com respeito e profundidade.</p>
-      <p class="reveal delay-2">Esse percurso atravessa diferentes experiências de formação, convivência e trabalho, sempre aproximado pelas questões da existência, da subjetividade e da busca humana por sentido.</p>
-      <p class="reveal delay-3">Mais do que procurar explicar a vida de maneira rápida ou simplificada, fui aprendendo a permanecer diante dela com atenção, escuta e abertura.</p>
-      <p class="reveal delay-4">Minha prática clínica é atravessada pela perspectiva fenomenológico-existencial, abordagem que compreende o ser humano a partir de sua experiência concreta no mundo, em suas relações, conflitos, escolhas e modos de existir.</p>
-      <p class="reveal delay-5">Entre sofrimento e esperança, fragilidade e reconstrução, sigo compreendendo o cuidado como um encontro humano onde a vida pode voltar a respirar de maneira mais autêntica.</p>
+      <p class="reveal delay-1">Na perspectiva fenomenológico-existencial, o bem-estar não significa eliminar os desafios da vida, mas sim acolher e compreender as experiências que nos atravessam. É o reconhecimento dos sentidos que emergem na relação com o mundo, com os outros e conosco mesmos.</p>
     </div>
   </div>
 </section>
 
-<section class="sec-historia section-wrap" id="historia">
+<section class="sec-historia section-wrap" id="caminhada">
   <div class="container">
     <div class="historia-grid">
       <div class="historia-sidebar reveal">
-        <div class="label-tag">Quem sou</div>
-        <h2>Minha História</h2>
+        <div class="label-tag">Quem somos</div>
+        <h2>Nossa Caminhada</h2>
         <div class="historia-ornament">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.75329 17.2467 2.5 12 2.5C6.75329 2.5 2.5 6.75329 2.5 12C2.5 17.2467 6.75329 21.5 12 21.5Z" stroke="#7B3FC4" stroke-width="1.5"/>
@@ -1489,39 +1507,23 @@ footer {
         </div>
       </div>
       <div class="prose reveal delay-2">
-        <p>Cresci em um ambiente marcado pela diversidade de experiências humanas, o que desde cedo me aproximou das questões existenciais e da escuta como forma de presença.</p>
-        <p>Meu percurso acadêmico e de vida foi sendo construído na interface entre a teologia, a filosofia e a psicologia — campos que, para mim, convergem no interesse pelo humano em sua profundidade.</p>
-        <p>A passagem pela teologia me aproximou das grandes questões do sentido, da transcendência e da experiência de sofrimento. A psicologia me ofereceu ferramentas para caminhar com o outro nesse território, sem pretender respostas definitivas.</p>
-        <p>Estudei e me aprofundei na abordagem fenomenológico-existencial, que compreende a pessoa não como um conjunto de sintomas, mas como um ser situado no mundo, em relação, carregando uma história e buscando sentido.</p>
-        <p>Ao longo da minha formação, tive a oportunidade de estudar e aprender em diferentes contextos, inclusive no exterior, ampliando minha visão sobre o cuidado psicológico e a condição humana em suas múltiplas expressões culturais.</p>
-        <p>Hoje, minha prática clínica é o lugar onde todas essas experiências convergem: um espaço de encontro, escuta e cuidado, onde busco estar genuinamente presente para cada pessoa que me procura.</p>
-        <p>Acredito que a psicoterapia não é apenas um processo técnico, mas um encontro humano — onde duas pessoas se encontram na complexidade da existência, e onde a vida pode ser reimaginada com mais autenticidade e profundidade.</p>
+        <p>Mais do que um registro visual, esta é a celebração de uma caminhada compartilhada com propósito. Minha esposa e eu dedicamos nossas trajetórias profissionais ao cuidado humano. Nessa jornada, compreendemos que acolhimento, respeito e presença são preceitos que transformam tanto a saúde quanto a vida.</p>
+        <p>Juntos há 42 anos, construímos uma família unida com 3 filhos, 3 noras e 6 netos. Um legado de afeto que caminha em paralelo com a nossa realização profissional — com destaque para a Leides, que atua com excelência como enfermeira e professora titular da UnB.</p>
       </div>
-      <div class="historia-photo reveal delay-3">
-        <img src="valter-leides.png" alt="Valter e Leides">
+      <div class="historia-photo">
+        <img src="valter-leides.png" alt="Valter e Leides compartilhando a caminhada">
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec-perspectiva section-wrap" id="perspectiva">
+<section class="sec-perspectiva section-wrap" id="psicoterapia">
   <div class="perspectiva-glow"></div>
   <div class="container" style="position:relative;z-index:2">
-    <div class="label-tag reveal">Abordagem</div>
-    <h2 class="perspectiva-title reveal delay-1">Minha Perspectiva</h2>
-    <div class="perspectiva-grid">
-      <div class="perspectiva-card reveal delay-1">
-        <p>A perspectiva fenomenológico-existencial parte de uma premissa fundamental: cada ser humano é único, situado em um mundo concreto, carregando uma história singular que não pode ser reduzida a categorias ou diagnósticos.</p>
-      </div>
-      <div class="perspectiva-card reveal delay-2">
-        <p>O sofrimento psicológico, nessa compreensão, não é um defeito a ser corrigido, mas uma expressão de algo que pede atenção na experience vivida — uma ruptura de sentido, uma dificuldade nas relações, um chamado de si mesmo.</p>
-      </div>
-      <div class="perspectiva-card reveal delay-3">
-        <p>O trabalho clínico, para mim, acontece no encontro: no espaço entre duas pessoas onde a experiência pode ser dita, escutada e elaborada sem julgamento. A presença, a escuta e o respeito são os fundamentos do cuidado.</p>
-      </div>
-      <div class="perspectiva-card reveal delay-4">
-        <p>Não ofereço receitas ou soluções prontas. Ofereço um espaço onde sua experiência pode ser acolhida com profundidade, onde você pode se encontrar com mais clareza, autenticidade e possibilidade de construir novos caminhos.</p>
-      </div>
+    <div class="label-tag reveal">O Processo</div>
+    <h2 class="perspectiva-title reveal delay-1" style="max-width: 100%;">Como funciona a Psicoterapia</h2>
+    <div class="prose reveal delay-2" style="color: rgba(230,220,250,0.9); font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(18px, 2.2vw, 22px); line-height: 1.78;">
+      <p>A psicoterapia é um espaço de reflexão que favorece o encontro com a própria história. Um processo que permite a cada pessoa se aproximar de sua experiência com mais clareza, responsabilidade e liberdade diante das escolhas que a vida apresenta.</p>
     </div>
   </div>
 </section>
@@ -1537,7 +1539,7 @@ footer {
         <div class="fc-icon">🎓</div>
         <div class="fc-area">Graduação</div>
         <h3>Teologia</h3>
-        <p>Formação que fundamentou a compreensão das questões existentialis, do sentido e da dimensão espiritual da experiência humana.</p>
+        <p>Formação que fundamentou a compreensão das questões existenciais, do sentido e da dimensão espiritual da experiência humana.</p>
       </div>
       <div class="formacao-card reveal delay-2">
         <div class="fc-icon">🧠</div>
@@ -1558,7 +1560,7 @@ footer {
         <p>Formação aprofundada em Psicologia Fenomenológico-Existencial pelo Instituto de Psicologia e Fenomenologia Existencial — Rio de Janeiro.</p>
       </div>
       <div class="formacao-card reveal delay-5">
-        <div class="fc-icon">🌍</div>
+        <div class="fc-icon">🌐</div>
         <div class="fc-area">Internacional</div>
         <h3>Experiência Internacional</h3>
         <p>Vivências de formação em contextos internacionais, ampliando a visão sobre o cuidado psicológico e a condição humana em suas múltiplas expressões culturais.</p>
@@ -1622,7 +1624,7 @@ footer {
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-slogan">Humanizar o Ser e o Existir</p>
+      <p class="footer-slogan">Bene Esse: Presença e cuidado no seu caminho.</p>
       <div class="footer-links">
         <a href="https://instagram.com/mouravaltim" target="_blank" rel="noopener">Instagram</a>
         <a href="https://wa.me/5561982525488" target="_blank" rel="noopener">WhatsApp</a>
@@ -1640,7 +1642,7 @@ footer {
 </footer>
 
 <a href="https://wa.me/5561982525488?text=Ol%C3%A1%2C%20Valter.%20Gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.528 5.847L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.5-5.194-1.378l-.372-.22-3.763.981.998-3.666-.242-.376A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
   </svg>
@@ -1648,44 +1650,41 @@ footer {
 
 <script>
 const themeToggleText = document.getElementById('theme-text');
+const themeCheckbox = document.getElementById('checkbox-theme');
 
 function updateThemeUI(theme) {
   if (themeToggleText) {
     themeToggleText.textContent = theme === 'dark' ? 'Modo Escuro' : 'Modo Claro';
   }
+  if (themeCheckbox) {
+    themeCheckbox.checked = (theme === 'dark');
+  }
 }
 
-/* ── Lógica de Alternância de Tema Claro/Escuro Manual ── */
+/* Lógica de Alternância Corrigida */
 function toggleTheme() {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  let newTheme = 'light';
-  
-  if (currentTheme) {
-    newTheme = currentTheme === 'light' ? 'dark' : 'light';
-  } else {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    newTheme = prefersDark ? 'light' : 'dark';
-  }
+  // Pega diretamente o status do checkbox que o usuário acabou de clicar
+  const isDark = document.getElementById('checkbox-theme').checked;
+  const newTheme = isDark ? 'dark' : 'light';
   
   document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem('theme', newTheme);
   updateThemeUI(newTheme);
 }
 
-// Inicializa a legenda correta no carregamento
 document.addEventListener('DOMContentLoaded', () => {
   const activeTheme = document.documentElement.getAttribute('data-theme') || 
     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   updateThemeUI(activeTheme);
 });
 
-/* ── Header scroll ── */
+/* Header scroll */
 const hdr = document.getElementById('header');
 window.addEventListener('scroll', () => {
   hdr.classList.toggle('scrolled', window.scrollY > 56);
 }, { passive: true });
 
-/* ── Mobile nav ── */
+/* Mobile nav */
 const burger = document.getElementById('hamburger');
 const nav    = document.getElementById('mobileNav');
 
@@ -1700,7 +1699,7 @@ function closeNav() {
   document.body.style.overflow = '';
 }
 
-/* ── Scroll reveal ── */
+/* Scroll reveal (removido das fotos pra garantir exibição direta e sem falhas) */
 const revealEls = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -1709,7 +1708,7 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.10, rootMargin: '0px 0px -36px 0px' });
 revealEls.forEach(el => io.observe(el));
 
-/* ── Smooth anchor scroll ── */
+/* Smooth anchor scroll */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
